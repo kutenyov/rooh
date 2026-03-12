@@ -1,0 +1,286 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* VitaCore Design System - Light Theme */
+  
+  /* Brand Colors */
+  --brand-100: #ddefb5;
+  --brand-300: #9fd526;
+  --brand-500: #d3ff55;
+  --brand-700: #6ba000;
+  
+  /* Backgrounds */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F6F7F4;
+  --bg-tertiary: #ECEEE8;
+  
+  /* Surface */
+  --surface: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  
+  /* Text Colors */
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --text-tertiary: #9E9E9E;
+  --text-on-brand: #1A1A1A;
+  
+  /* Border Colors */
+  --border-color: #E5E5E5;
+  --border-focus: #9fd526;
+  
+  /* Icon Colors */
+  --icon-primary: #1A1A1A;
+  --icon-secondary: #9E9E9E;
+  --icon-active: #9fd526;
+  
+  /* Semantic Colors */
+  --error: #EF5350;
+  --warning: #FFA726;
+  --success: #66BB6A;
+  --info: #42A5F5;
+  --orange: #FFB74D;
+  
+  /* Overlay */
+  --overlay: rgba(0, 0, 0, 0.4);
+  
+  /* Legacy support */
+  --font-size: 16px;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --destructive: #E53935;
+  --destructive-foreground: #ffffff;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Border radius */
+  --radius-card: 16px;
+  --radius-button: 12px;
+  --radius-input: 12px;
+  --radius-chip: 20px;
+  --radius-modal: 20px;
+  --radius-sheet: 24px;
+}
+
+.dark {
+  /* VitaCore Design System - Dark Theme */
+  
+  /* Brand Colors (same) */
+  --brand-100: #ddefb5;
+  --brand-300: #9fd526;
+  --brand-500: #d3ff55;
+  --brand-700: #6ba000;
+  
+  /* Backgrounds */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1E1E1E;
+  
+  /* Surface */
+  --surface: #1A1A1A;
+  --surface-elevated: #242424;
+  
+  /* Text Colors */
+  --text-primary: #F5F5F5;
+  --text-secondary: #A0A0A0;
+  --text-tertiary: #666666;
+  --text-on-brand: #0A0A0A;
+  
+  /* Border Colors */
+  --border-color: #2A2A2A;
+  --border-focus: #d3ff55;
+  
+  /* Icon Colors */
+  --icon-primary: #F5F5F5;
+  --icon-secondary: #666666;
+  --icon-active: #d3ff55;
+  
+  /* Semantic Colors */
+  --error: #EF5350;
+  --warning: #FFA726;
+  --success: #66BB6A;
+  --info: #42A5F5;
+  
+  /* Overlay */
+  --overlay: rgba(0, 0, 0, 0.6);
+  
+  /* Legacy support */
+  --background: #0A0A0A;
+  --foreground: #F5F5F5;
+  --card: #1A1A1A;
+  --card-foreground: #F5F5F5;
+  --destructive: #EF5350;
+  --destructive-foreground: #ffffff;
+}
+
+@theme inline {
+  /* VitaCore Color Classes */
+  --color-brand-100: var(--brand-100);
+  --color-brand-300: var(--brand-300);
+  --color-brand-500: var(--brand-500);
+  --color-brand-700: var(--brand-700);
+  
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-on-brand: var(--text-on-brand);
+  
+  --color-border: var(--border-color);
+  --color-border-focus: var(--border-focus);
+  
+  --color-icon-primary: var(--icon-primary);
+  --color-icon-secondary: var(--icon-secondary);
+  --color-icon-active: var(--icon-active);
+  
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-info: var(--info);
+  
+  --color-overlay: var(--overlay);
+  
+  /* Legacy support */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  /* Border Radius */
+  --radius-card: var(--radius-card);
+  --radius-button: var(--radius-button);
+  --radius-input: var(--radius-input);
+  --radius-chip: var(--radius-chip);
+  --radius-modal: var(--radius-modal);
+  --radius-sheet: var(--radius-sheet);
+}
+
+@layer base {
+  * {
+    @apply outline-border-focus/50;
+  }
+
+  html,
+  body {
+    @apply overflow-hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary;
+  }
+
+  /**
+  * VitaCore Typography Styles
+  */
+
+  html {
+    font-size: var(--font-size);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    line-height: 34px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 22px;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 18px;
+  }
+
+  input {
+    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    line-height: 22px;
+  }
+
+  /* Hide scrollbar completely */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Custom animations for Loader and Onboarding */
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  .animate-progress {
+    animation: progress 1.5s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+}
