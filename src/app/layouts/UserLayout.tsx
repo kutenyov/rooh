@@ -115,9 +115,9 @@ export function UserLayout() {
   };
 
   return (
-    <div className="h-screen bg-bg-secondary flex justify-center overflow-hidden">
+    <div className="h-dvh bg-bg-secondary flex justify-center overflow-hidden">
       {/* Mobile container - centered on larger screens */}
-      <div className="relative w-full max-w-[600px] bg-bg-secondary h-screen flex flex-col">
+      <div className="relative w-full max-w-[600px] bg-bg-secondary h-dvh flex flex-col">
         {/* Header */}
         <Header
           notificationCount={unreadCount}
