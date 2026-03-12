@@ -117,21 +117,23 @@ export function UserLayout() {
   return (
     <div className="h-screen bg-bg-secondary flex justify-center overflow-hidden">
       {/* Mobile container - centered on larger screens */}
-      <div className="relative w-full max-w-[390px] bg-bg-secondary h-screen flex flex-col">
+      <div className="relative w-full max-w-[600px] bg-bg-secondary h-screen flex flex-col">
         {/* Header */}
-        <Header 
+        <Header
           notificationCount={unreadCount}
           onNotificationClick={() => setIsNotificationsOpen(true)}
           onQuickActionClick={handleHeaderQuickAction}
         />
-        
+
         {/* Main content - scrollable area */}
-        <main className="flex-1 overflow-y-auto pb-[76px]">
+        <main className="flex-1 overflow-y-auto pb-20">
           <Outlet />
         </main>
-        
-        {/* Bottom Tab Bar - fixed at bottom */}
-        <BottomTabBar onQuickActionClick={() => setIsQuickActionsOpen(true)} />
+
+        {/* Bottom Tab Bar - absolute at bottom */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <BottomTabBar onQuickActionClick={() => setIsQuickActionsOpen(true)} />
+        </div>
 
         {/* Quick Actions Bottom Sheet */}
         <QuickActionsSheet

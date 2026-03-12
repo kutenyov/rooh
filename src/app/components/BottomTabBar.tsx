@@ -98,10 +98,9 @@ export function BottomTabBar({ onQuickActionClick }: BottomTabBarProps) {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-30 flex justify-center">
-      <div className="w-full max-w-[390px] relative">
-        {/* Tab Bar with enhanced glassmorphism */}
-        <div className="relative bg-surface/70 backdrop-blur-2xl backdrop-saturate-150 border-t border-white/10 dark:border-white/5 shadow-[0_-8px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
+    <div className="w-full relative z-30">
+      {/* Tab Bar with enhanced glassmorphism */}
+      <div className="relative bg-surface/70 backdrop-blur-2xl backdrop-saturate-150 border-t border-white/10 dark:border-white/5 shadow-[0_-8px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
           {/* Notch cutout using clip-path */}
           <div 
             className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent dark:from-white/3"
@@ -138,7 +137,6 @@ export function BottomTabBar({ onQuickActionClick }: BottomTabBarProps) {
           >
             <Plus size={28} className="text-text-on-brand drop-shadow-lg" strokeWidth={2.5} />
           </button>
-        </div>
       </div>
     </div>
   );
