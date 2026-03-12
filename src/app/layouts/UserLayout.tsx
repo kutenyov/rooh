@@ -126,7 +126,7 @@ export function UserLayout() {
         />
 
         {/* Main content - scrollable area */}
-        <main className="flex-1 overflow-y-auto pb-20">
+        <main className="flex-1 overflow-y-auto pb-28">
           <Outlet />
         </main>
 
