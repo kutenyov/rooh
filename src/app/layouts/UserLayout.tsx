@@ -126,12 +126,12 @@ export function UserLayout() {
         />
 
         {/* Main content - scrollable area */}
-        <main className="flex-1 overflow-y-auto pb-28">
+        <main className="flex-1 overflow-y-auto pb-6">
           <Outlet />
         </main>
 
-        {/* Bottom Tab Bar - absolute at bottom */}
-        <div className="absolute bottom-0 left-0 right-0">
+        {/* Bottom Tab Bar */}
+        <div className="shrink-0">
           <BottomTabBar onQuickActionClick={() => setIsQuickActionsOpen(true)} />
         </div>
 
