@@ -12,7 +12,7 @@ import { AddFoodSheet } from '../../components/nutrition/AddFoodSheet';
 import { WaterSheet } from '../../components/nutrition/WaterSheet';
 import { FoodDetailsSheet } from '../../components/nutrition/FoodDetailsSheet';
 import { QuickLogSheet } from '../../components/nutrition/QuickLogSheet';
-import fatIcon from 'figma:asset/20079a9356b149dcd970a4d50a9221e82c491450.png';
+import fatIcon from '@/assets/20079a9356b149dcd970a4d50a9221e82c491450.png';
 
 const weeklyCaloriesData = [
   { day: 'Mon', calories: 1800, goal: 2000 },

@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from 'figma:asset/267bfba205e7b111cd1cd8eed86a3e179c66d213.png';
-import loaderImage from 'figma:asset/029529525a15fad4639b861753efcc2bfe5025df.png';
+import logo from '@/assets/267bfba205e7b111cd1cd8eed86a3e179c66d213.png';
+import loaderImage from '@/assets/029529525a15fad4639b861753efcc2bfe5025df.png';
 
 export function Loader() {
   return (

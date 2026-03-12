@@ -9,7 +9,7 @@ import { Chip } from '../../components/Chip';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { Utensils, Users, Calendar as CalendarIcon, ArrowRight, Sparkles, Flame, Trophy, Droplets, Activity, Heart, Camera, Beef, Wheat } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import fatIcon from 'figma:asset/20079a9356b149dcd970a4d50a9221e82c491450.png';
+import fatIcon from '@/assets/20079a9356b149dcd970a4d50a9221e82c491450.png';
 
 const weeklyData = [
   { day: 'Mon', calories: 1800, steps: 8500 },

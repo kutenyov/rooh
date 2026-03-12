@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
 import { Heart, Utensils, Trophy, Sparkles } from 'lucide-react';
-import logo from 'figma:asset/267bfba205e7b111cd1cd8eed86a3e179c66d213.png';
+import logo from '@/assets/267bfba205e7b111cd1cd8eed86a3e179c66d213.png';
 
 interface OnboardingProps {
   onComplete: () => void;
